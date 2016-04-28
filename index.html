@@ -15,71 +15,117 @@
 <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
-<div class="sub-container">
-<div class="container">
-  <div id="nav">
-    <div class="nav-section">
-      <div class="nav-item nav-logo">
-        <div id="nav-logo-lead">Board Studios</div>
-      </div>
-    </div>
-    <div class="nav-section">
-      <div class="nav-item nav-pages">
-        <a href="#">Case Studies</a>
-        <a href="#">Methodologies</a>
-        <a href="#">Services</a>
-        <a href="#">Careers</a>
-        <button class="btn">Partner With Us</button>
-      </div>
-    </div>
-  </div>
-
-  <div id="home-hero" class="row">
-    <h2 id="home-hero-brand">Board Studios</h2>
-  </div>
-
-  <div id="home-pitch" class="row">
-    <div id="home-pitch-wrapper">
-      <h2>Redefining Digital Media</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque aut ipsam nam est reprehenderit rerum, non nobis vero voluptatibus, molestias. Magni labore earum officiis sint, ab quis ratione dicta excepturi!</p>
-    </div>
-  </div>
-
-  <div id="home-process" class="row">
-    <div class="home-process-section">
-      <div class="home-process-section-column">
-        <h2 id="home-process-lead">Our Unique Process</h2>
-        <p class="home-process-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos suscipit necessitatibus assumenda doloribus veniam nostrum perspiciatis ad, quae harum reprehenderit pariatur maiores? Incidunt maiores, aut est laborum sapiente sint fugit.</p>
-      </div>
-      <div class="home-process-section-row">
-        <div class="img-wrapper">
-        </div>
-      </div>
-    </div>
-    <div class="home-process-section">
-      <div class="home-process-section-row">
-        <div class="home-process-section-column">
-          <p class="home-process-heading">Discovery</p>
-          <p class="home-process-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        </div>
-        <div class="home-process-section-column">
-          <p class="home-process-heading">Discovery</p>
-          <p class="home-process-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        </div>
-        <div class="home-process-section-column">
-          <p class="home-process-heading">Discovery</p>
-          <p class="home-process-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        </div>
-        <div class="home-process-section-column">
-          <p class="home-process-heading">Discovery</p>
-          <p class="home-process-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
+<div id="nav" class="flexbox-row-fe">
+<div id="nav-wrapper">
+  <ul>
+    <li>Case Studies</li>
+    <li>Methodologies</li>
+    <li>Services</li>
+    <li>Careers</li>
+  </ul>
 </div>
 </div>
+<div id="hero" class="flexbox-row-sb">
+  <div id="hero-left-wrapper" class="flexbox-column-fs">
+    <h1 id="hero-title"><img src="img/logo.svg" alt="Suits & Rebels"></h1>
+    <ul id="hero-list">
+      <li>Videography</li>
+      <li>Animation</li>
+      <li>Design</li>
+      <li>Development</li>
+    </ul>
+    <span id="hero-lead">Unapologetic Branding</span>
+  </div>
+  <div id="hero-right-wrapper" class="flexbox-column-fs">
+    <div id="hero-video-container">
+      <video autoplay loop muted>
+        <source src="img/hero-video.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</div>
+<div class="section-orange">
+  <div id="pitch" class="flexbox-row-sb">
+    <div id="pitch-left-wrapper" class="flexbox-column-fs">
+      <h3 id="pitch-title">Our Philosophy</h3>
+      <span id="pitch-lead">Our language is rooted in business and design</span>
+      <p>We "hack" video for maximum impact and cost effectiveness. We're constantly coming up with new video "solutions" with the singular goal of getting your message heard. We believe video is the way to explain, inspire and grow; Since you are here you probably believe it too.</p>
+    </div>
+    <div id="pitch-right-wrapper" class="flexbox-column-fs">
+      <img src="img/pitch-icons.svg" alt="Animated Icons">
+    </div>
+  </div>
+</div>
+<div id="case" class="section-dark">
+  <div class="flexbox-row-c">
+    <h3 id="case-title">Case Studi<span class="title-special">&#398</span>s</h3>
+  </div>
+  <div class="flexbox-row-sb">
+    <div class="case-project" id="case-1">
+      <div id="case-1-img"></div>
+      <div class="case-project-content">
+        <p class="case-project-content-description">Learn how we helped Alibaba with a time-crunched video campaign</p>
+        <h1>Alibaba</h1>
+      </div>
+    </div>
+    <div class="case-project" id="case-2">
+      <div id="case-2-img"></div>
+      <div class="case-project-content">
+        <p class="case-project-content-description">Learn how we helped Alibaba with a time-crunched video campaign</p>
+        <h1>Alibaba</h1>
+      </div>
+    </div>
+    <div class="case-project" id="case-3">
+      <div id="case-3-img"></div>
+      <div class="case-project-content">
+        <p class="case-project-content-description">Learn how we helped Alibaba with a time-crunched video campaign</p>
+        <h1>Alibaba</h1>
+      </div>
+    </div>
+    <div class="case-project" id="case-4">
+      <div id="case-4-img"></div>
+      <div class="case-project-content">
+        <p class="case-project-content-description">Learn how we helped Alibaba with a time-crunched video campaign</p>
+        <h1>Alibaba</h1>
+      </div>
+    </div>
+  </div>
+  <div class="flexbox-row-c">
+    <a id="case-more" class="btn">View more Projects</a>
+  </div>
+</div>
+<div id="process" class="section flexbox-column-c">
+  <h3 id="process-title">Our Proc<span class="title-special">&#398</span>ss</h3>
+  <div class="process-timeline-item" id="process-one">
+    <div class="flexbox-column-c">
+      <h3 class="process-timeline-title">Just a smalltown girl</h3>
+        <h1><span class="process-step">step 1</span>Work Work werk</h1>
+        <div class="process-block">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, quasi. Nisi alias mollitia sapiente ipsa, fuga similique eius dolores tenetur eaque quisquam quia et, iste corporis laboriosam atque in rem.
+        </div>
+    </div>
+  </div>
+  <div class="process-timeline-item" id="process-two">
+    <div class="flexbox-column-c">
+      <h3 class="process-timeline-title">Living in a lonely world</h3>
+        <h1><span class="process-step">step 1</span>Something Smart</h1>
+        <div class="process-block">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, quasi. Nisi alias mollitia sapiente ipsa, fuga similique eius dolores tenetur eaque quisquam quia et, iste corporis laboriosam atque in rem. lorem
+        </div>
+    </div>
+  </div>
+  <div class="process-timeline-item" id="process-three">
+    <div class="flexbox-column-c">
+      <h3 class="process-timeline-title">Don't stop believing</h3>
+        <h1><span class="process-step">step 1</span>Three's a Charm</h1>
+        <div class="process-block">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, quasi. Nisi alias mollitia sapiente ipsa, fuga similique eius dolores tenetur eaque quisquam quia et, iste corporis laboriosam atque in rem.
+        </div>
+    </div>
+  </div>
+  <a href="#" class="btn">Work With Us</a>
+</div>
+
   
 <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
