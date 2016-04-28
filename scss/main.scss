@@ -1,0 +1,232 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "bourbon";
+@import "base/colors";
+@import "base/grid";
+
+@import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic,700,700italic);
+
+html {
+  font-size: 80%;
+  background: #FEFAEF;
+}
+
+.sub-container {
+    margin: 0 auto;
+    padding: 4rem;
+    width: 100%;
+    background: #FDFAEF;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Arimo', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+  color: white;
+}
+p {
+  font-family: 'Arimo', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: white;
+}
+
+h1 {
+  font-size: 3.625rem;
+}
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.625rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+#nav {
+  position: fixed;
+  transform: translateX(-15px);
+  z-index: 200;
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0);
+  .nav-section{
+    display: flex;
+    align-items: center;
+  }
+  #nav-logo-lead {
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 0.1rem;
+  }
+  .nav-item {
+    padding: 5px 15px;
+    font-size: 0.9rem;
+  }
+  .nav-pages > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 0.1rem;
+    padding-right: 15px;
+    &:last-of-type {
+      margin-right: 30px;
+    }
+  }
+  .btn {
+    background: $brand-color;
+    padding: 10px 30px;
+    border: none;
+    color: white;
+    border-radius: 0.2rem;
+  }
+}
+#home-hero {
+  @include size(auto 700px);
+  background: $brand-background-1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  #home-hero-brand{
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    white-space: nowrap;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+  }
+  #home-hero-lead{
+    color: rgba(255, 255, 255, 1);
+    font-size: 4rem;
+    font-style: italic;
+    letter-spacing: 0.1rem;
+  }
+}
+
+#home-pitch-wrapper {
+  @include size(auto 370px);  
+  margin: 4rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: $brand-color;
+  p {
+    width: 70%;
+    text-align: center;
+  }
+}
+
+#home-process {
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .home-process-section {
+    margin: 2rem 5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .home-process-section-column {
+    margin: 0 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+  }
+  .home-process-section-row {
+    margin: 0 5rem;
+    display: flex;
+    align-items: center;
+  }
+  #home-process-lead {
+    display: block;
+  }
+  .img-wrapper {
+    @include size(262px);
+    background: url('../img/process-bg.jpg') no-repeat;
+    background-size: cover;
+  }
+  @include size(auto 680px); 
+}
+
+#home-case {
+  @include size(auto 1390px);
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: $brand-color;
+  .home-case-section {
+    margin: 2rem 5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .home-case-section-column {
+    margin: 0 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+  }
+  .home-case-section-row {
+    margin: 0 5rem;
+    display: flex;
+    align-items: center;
+  }
+  .home-case-proj-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px 40px;
+    font-size: 1.2rem;
+    color: white;
+    margin: 10px 20px;
+    border: 3px solid white;
+    border-radius: 1rem;
+    letter-spacing: 0.2rem;
+  }
+  .home-case-img-md {
+    width: 555px;
+    height: 400px;
+    overflow: hidden;
+    padding: 40px;
+  }
+  .home-case-img-lg {
+    width: 1140px;
+    height: 600px;
+    padding: 50px;
+    overflow: hidden;
+  }
+  .btn {
+    padding: 20px 40px;
+    line-height: 0;
+    border: none;
+    color: white;
+    background: black;
+    border-radius: 1rem;
+  }
+}
+
+#home-test {
+  @include size(auto 560px); 
+}
+
+#home-cta {
+  @include size(auto 510px); 
+}
+
+#home-contact {
+  @include size(auto 740px); 
+}
