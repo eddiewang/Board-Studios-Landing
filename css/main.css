@@ -6,8 +6,8 @@
 html {
   font-family: "Open Sans", sans-serif;
   font-size: 100%;
-  background: #FDFAFE;
-  color: #111111; }
+  background: #fdfbfe;
+  color: #121212; }
 
 p {
   font-size: 0.9rem;
@@ -21,13 +21,13 @@ p {
   font-size: 0.8rem;
   text-decoration: none;
   color: white;
-  background: #ed855c;
+  background: #ed875e;
   padding: 1.5em 3em;
   border-radius: 0.2em;
   transition: background-color 0.8s ease;
   cursor: pointer; }
   .btn:hover {
-    background-color: #f54c00; }
+    background-color: #f54e00; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
@@ -38,6 +38,11 @@ h1, h2, h3, h4, h5, h6 {
 .flexbox-row-fs {
   display: flex;
   justify-content: flex-start;
+  align-items: center; }
+
+.flexbox-row-fe {
+  display: flex;
+  justify-content: flex-end;
   align-items: center; }
 
 .flexbox-row-sb {
@@ -56,6 +61,12 @@ h1, h2, h3, h4, h5, h6 {
   align-items: flex-start;
   justify-content: center; }
 
+.flexbox-column-fe {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center; }
+
 .flexbox-column-c {
   display: flex;
   flex-direction: column;
@@ -66,6 +77,42 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
   justify-content: center; }
+
+.title-special {
+  color: #ed875e; }
+
+#nav {
+  position: fixed;
+  transform: translateY(-100px);
+  opacity: 0;
+  width: 100%;
+  z-index: 100;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  transition: transform 0.9s ease 0s, opacity 4s ease 3s, background-color 0.5s ease 0s; }
+  #nav.active {
+    opacity: 1;
+    transform: translateY(0); }
+  #nav.nav-up {
+    transform: translateY(-100px); }
+  #nav.nav-down {
+    background-color: black; }
+  #nav #nav-wrapper {
+    padding-right: 5rem; }
+  #nav ul li {
+    display: inline-block;
+    font-family: Montserrat, sans-serif;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: white;
+    margin-right: 2rem;
+    letter-spacing: 0.2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+    transition: border-bottom 0.8s ease 0s; }
+    #nav ul li:hover {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
 
 #hero {
   height: 100vh; }
@@ -115,7 +162,7 @@ h1, h2, h3, h4, h5, h6 {
       overflow: hidden;
       height: 100%;
       width: 100%;
-      background: linear-gradient(black, transparent), linear-gradient(30deg, black, transparent), linear-gradient(-180deg, #ed855c, transparent);
+      background: linear-gradient(rgba(0, 0, 0, 0.8), transparent), linear-gradient(-30deg, rgba(0, 0, 0, 0.2), transparent), linear-gradient(0, #ed875e, transparent);
       background-blend-mode: screen; }
       #hero #hero-right-wrapper #hero-video-container video {
         position: absolute;
@@ -147,45 +194,60 @@ h1, h2, h3, h4, h5, h6 {
   font-style: italic;
   white-space: nowrap; }
 
-#case .case-project {
-  flex: 1 1 0;
-  height: 50vh;
-  width: 25%;
-  margin: 4rem 1rem; }
 #case #case-1-img, #case #case-2-img, #case #case-3-img, #case #case-4-img {
+  transition: all 1s ease;
   height: 100%;
   width: 100%;
-  opacity: 0.3;
-  transition: opacity 1s ease 0s;
+  opacity: 0.8;
   border-radius: 0.3rem; }
-  #case #case-1-img:hover, #case #case-2-img:hover, #case #case-3-img:hover, #case #case-4-img:hover {
-    opacity: 1; }
 #case #case-1-img {
-  background: linear-gradient(black, transparent), linear-gradient(30deg, black, transparent), linear-gradient(-180deg, #ed855c, transparent), url("../img/case-1.jpg") no-repeat center;
+  background: linear-gradient(black, transparent), linear-gradient(30deg, black, transparent), linear-gradient(-180deg, #ed875e, transparent), url("../img/case-1.jpg") no-repeat center;
   background-blend-mode: screen;
   background-size: cover; }
 #case #case-2-img {
-  background: linear-gradient(black, transparent), linear-gradient(30deg, black, transparent), linear-gradient(-180deg, #ed855c, transparent), url("../img/case-2.jpg") no-repeat center;
+  background: linear-gradient(black, transparent), linear-gradient(30deg, black, transparent), linear-gradient(-180deg, #ed875e, transparent), url("../img/case-2.jpg") no-repeat center;
   background-blend-mode: screen;
   background-size: cover; }
 #case #case-3-img {
-  background: linear-gradient(black, transparent), linear-gradient(30deg, black, transparent), linear-gradient(-180deg, #ed855c, transparent), url("../img/case-3.png") no-repeat center;
+  background: linear-gradient(black, transparent), linear-gradient(30deg, black, transparent), linear-gradient(-180deg, #ed875e, transparent), url("../img/case-3.png") no-repeat center;
   background-blend-mode: screen;
   background-size: cover; }
 #case #case-4-img {
-  background: linear-gradient(black, transparent), linear-gradient(30deg, black, transparent), linear-gradient(-180deg, #ed855c, transparent), url("../img/case-4.jpg") no-repeat right;
+  background: linear-gradient(black, transparent), linear-gradient(30deg, black, transparent), linear-gradient(-180deg, #ed875e, transparent), url("../img/case-4.jpg") no-repeat right;
   background-blend-mode: screen;
   background-size: cover; }
+#case .case-project {
+  height: 50vh;
+  width: 25%;
+  border-radius: 0.3rem;
+  margin: 4rem 1rem;
+  transition: all 0.3s ease;
+  cursor: pointer; }
+  #case .case-project .case-project-content {
+    margin-left: 2rem;
+    transform: translateY(0);
+    display: none;
+    opacity: 0; }
+    #case .case-project .case-project-content .case-project-content-description {
+      width: 70%; }
+  #case .case-project:hover {
+    background: #ed875e; }
+    #case .case-project:hover .case-project-content {
+      display: block;
+      transform: translateY(-15rem);
+      opacity: 1; }
+    #case .case-project:hover #case-1-img, #case .case-project:hover #case-2-img, #case .case-project:hover #case-3-img, #case .case-project:hover #case-4-img {
+      opacity: 0.1; }
 
 #process #process-title {
-  color: #ed855c; }
+  color: black; }
 #process .process-timeline-item {
   position: relative;
   padding: 6rem 0;
   margin: 5rem auto;
   width: 50%;
   color: white;
-  background: #ed855c;
+  background: #ed875e;
   border-radius: 1rem; }
 #process .process-timeline-item:not(:last-of-type):before {
   content: '';
@@ -194,7 +256,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 50%;
   height: 150%;
   width: 4px;
-  background: #ed855c;
+  background: #121212;
   opacity: 0.8;
   z-index: -1; }
 #process .process-step {
@@ -220,5 +282,5 @@ h1, h2, h3, h4, h5, h6 {
 
 .section-orange {
   padding: 5rem;
-  background: #ed855c;
+  background: #ed875e;
   color: white; }
