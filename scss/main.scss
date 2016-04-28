@@ -11,7 +11,7 @@
 html {
   font-family: "Open Sans", sans-serif;
   font-size: 100%;
-  background: hsl(285, 67%, 99%);
+  background: $brand-dark;
   color: $brand-dark;
 }
 
@@ -118,7 +118,7 @@ h1, h2, h3, h4, h5, h6 {
     transform:  translateY(-100px);
   }
   &.nav-down {
-    background-color: black;
+    background-color: $brand-dark;
   }
   #nav-wrapper {
     padding-right: 5rem;
@@ -145,7 +145,10 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   height: 100vh;
   #hero-left-wrapper {
-    margin-left: 5rem;
+    background: $brand-white;
+    height: 100%;
+    padding-left: 5rem;
+    padding-right: 5rem;
     #hero-title {
       font-size: 1.6rem;
       margin: 0;
@@ -193,7 +196,6 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     width: 100%;
     height: 100vh;
-    margin-left: 5rem;
     #hero-video-container{
       position: relative;
       overflow: hidden;
@@ -377,8 +379,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #process {
+  position: relative;
+  background: $brand-white;
+  z-index:-2;
   #process-title {
-    color: black;
+    color: $brand-dark;
   }
   .process-timeline-item {
     position: relative;
@@ -425,7 +430,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .section-dark {
   padding: 5rem;
-  background: black;
+  background: $brand-dark;
   color: white;
 }
 
