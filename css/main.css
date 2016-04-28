@@ -6,7 +6,7 @@
 html {
   font-family: "Open Sans", sans-serif;
   font-size: 100%;
-  background: #fdfbfe;
+  background: #121212;
   color: #121212; }
 
 p {
@@ -96,7 +96,7 @@ h1, h2, h3, h4, h5, h6 {
   #nav.nav-up {
     transform: translateY(-100px); }
   #nav.nav-down {
-    background-color: black; }
+    background-color: #121212; }
   #nav #nav-wrapper {
     padding-right: 5rem; }
   #nav ul li {
@@ -117,7 +117,10 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   height: 100vh; }
   #hero #hero-left-wrapper {
-    margin-left: 5rem; }
+    background: #fdfbfe;
+    height: 100%;
+    padding-left: 5rem;
+    padding-right: 5rem; }
     #hero #hero-left-wrapper #hero-title {
       font-size: 1.6rem;
       margin: 0;
@@ -155,8 +158,7 @@ h1, h2, h3, h4, h5, h6 {
   #hero #hero-right-wrapper {
     position: relative;
     width: 100%;
-    height: 100vh;
-    margin-left: 5rem; }
+    height: 100vh; }
     #hero #hero-right-wrapper #hero-video-container {
       position: relative;
       overflow: hidden;
@@ -239,37 +241,41 @@ h1, h2, h3, h4, h5, h6 {
     #case .case-project:hover #case-1-img, #case .case-project:hover #case-2-img, #case .case-project:hover #case-3-img, #case .case-project:hover #case-4-img {
       opacity: 0.1; }
 
-#process #process-title {
-  color: black; }
-#process .process-timeline-item {
+#process {
   position: relative;
-  padding: 6rem 0;
-  margin: 5rem auto;
-  width: 50%;
-  color: white;
-  background: #ed875e;
-  border-radius: 1rem; }
-#process .process-timeline-item:not(:last-of-type):before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;
-  height: 150%;
-  width: 4px;
-  background: #121212;
-  opacity: 0.8;
-  z-index: -1; }
-#process .process-step {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
-  font-style: italic; }
-  #process .process-step:after {
-    content: " "; }
-#process .process-block {
-  width: 60%;
-  text-align: center;
-  line-height: 2rem;
-  letter-spacing: 0.1rem; }
+  background: #fdfbfe;
+  z-index: -2; }
+  #process #process-title {
+    color: #121212; }
+  #process .process-timeline-item {
+    position: relative;
+    padding: 6rem 0;
+    margin: 5rem auto;
+    width: 50%;
+    color: white;
+    background: #ed875e;
+    border-radius: 1rem; }
+  #process .process-timeline-item:not(:last-of-type):before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 150%;
+    width: 4px;
+    background: #121212;
+    opacity: 0.8;
+    z-index: -1; }
+  #process .process-step {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-style: italic; }
+    #process .process-step:after {
+      content: " "; }
+  #process .process-block {
+    width: 60%;
+    text-align: center;
+    line-height: 2rem;
+    letter-spacing: 0.1rem; }
 
 .section {
   padding-top: 5rem;
@@ -277,7 +283,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .section-dark {
   padding: 5rem;
-  background: black;
+  background: #121212;
   color: white; }
 
 .section-orange {

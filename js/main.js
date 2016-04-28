@@ -14,7 +14,8 @@ $( document ).ready(function() {
     var didScroll;
     var lastScrollTop = 0;
     var delta = 5;
-    var navbarHeight = $('#hero').outerHeight();
+    var navbarHeight = $('#nav').outerHeight();
+    var heroHeight = $('#hero').outerHeight();
 
     function hasScrolled() {
         var st = $(this).scrollTop();
@@ -34,7 +35,7 @@ $( document ).ready(function() {
             // Scroll Up
 
             if(st + $(window).height() < $(document).height()) {
-                if (st < navbarHeight) {
+                if (st < heroHeight) {
                   $('#nav').removeClass('nav-up').removeClass('nav-down');
                 }
                 else {
