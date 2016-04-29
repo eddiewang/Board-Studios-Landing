@@ -67,6 +67,12 @@ h1, h2, h3, h4, h5, h6 {
   align-items: flex-end;
   justify-content: center; }
 
+.flexbox-column-sb {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: center; }
+
 .flexbox-column-c {
   display: flex;
   flex-direction: column;
@@ -173,73 +179,77 @@ h1, h2, h3, h4, h5, h6 {
         height: 100vh;
         z-index: -1; }
 
-#pitch #pitch-left-wrapper {
-  width: 33.3333%;
-  opacity: 0;
-  transition: opacity 1s ease 1s; }
-  #pitch #pitch-left-wrapper.active {
-    opacity: 1; }
-#pitch #pitch-right-wrapper {
-  opacity: 0;
-  transition: opacity 3s ease 2s; }
-  #pitch #pitch-right-wrapper.active {
-    opacity: 1; }
-  #pitch #pitch-right-wrapper img {
-    height: 100px;
-    margin-right: 10rem; }
-#pitch #pitch-lead {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.5rem;
-  line-height: 4rem;
-  letter-spacing: 0.1rem;
-  font-weight: 300;
-  font-style: italic;
-  white-space: nowrap; }
-
-#case #case-1-img, #case #case-2-img, #case #case-3-img, #case #case-4-img {
-  transition: all 1s ease;
-  height: 100%;
-  width: 100%;
-  opacity: 0.8;
-  border-radius: 0.3rem; }
-#case #case-1-img {
-  background: linear-gradient(black, transparent), linear-gradient(30deg, black, transparent), linear-gradient(-180deg, #ed875e, transparent), url("../img/case-1.jpg") no-repeat center;
-  background-blend-mode: screen;
-  background-size: cover; }
-#case #case-2-img {
-  background: linear-gradient(black, transparent), linear-gradient(30deg, black, transparent), linear-gradient(-180deg, #ed875e, transparent), url("../img/case-2.jpg") no-repeat center;
-  background-blend-mode: screen;
-  background-size: cover; }
-#case #case-3-img {
-  background: linear-gradient(black, transparent), linear-gradient(30deg, black, transparent), linear-gradient(-180deg, #ed875e, transparent), url("../img/case-3.png") no-repeat center;
-  background-blend-mode: screen;
-  background-size: cover; }
-#case #case-4-img {
-  background: linear-gradient(black, transparent), linear-gradient(30deg, black, transparent), linear-gradient(-180deg, #ed875e, transparent), url("../img/case-4.jpg") no-repeat right;
-  background-blend-mode: screen;
-  background-size: cover; }
-#case .case-project {
-  height: 50vh;
-  width: 25%;
-  border-radius: 0.3rem;
-  margin: 4rem 1rem;
-  transition: all 0.3s ease;
-  cursor: pointer; }
-  #case .case-project .case-project-content {
-    margin-left: 2rem;
-    transform: translateY(0);
-    display: none;
-    opacity: 0; }
-    #case .case-project .case-project-content .case-project-content-description {
-      width: 70%; }
-  #case .case-project:hover {
-    background: #ed875e; }
-    #case .case-project:hover .case-project-content {
-      display: block;
-      transform: translateY(-15rem);
+#pitch {
+  height: 100vh; }
+  #pitch #pitch-left-wrapper {
+    width: 33.3333%;
+    opacity: 0;
+    transition: opacity 1s ease 1s; }
+    #pitch #pitch-left-wrapper.active {
       opacity: 1; }
-    #case .case-project:hover #case-1-img, #case .case-project:hover #case-2-img, #case .case-project:hover #case-3-img, #case .case-project:hover #case-4-img {
-      opacity: 0.1; }
+  #pitch #pitch-right-wrapper {
+    opacity: 0;
+    transition: opacity 3s ease 2s; }
+    #pitch #pitch-right-wrapper.active {
+      opacity: 1; }
+    #pitch #pitch-right-wrapper img {
+      height: 100px;
+      margin-right: 10rem; }
+  #pitch #pitch-lead {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5rem;
+    line-height: 4rem;
+    letter-spacing: 0.1rem;
+    font-weight: 300;
+    font-style: italic;
+    white-space: nowrap; }
+
+#case {
+  height: 100vh; }
+  #case #case-1-img, #case #case-2-img, #case #case-3-img, #case #case-4-img {
+    transition: all 1s ease;
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+    border-radius: 0.3rem; }
+  #case #case-1-img {
+    background: linear-gradient(black, transparent), linear-gradient(30deg, black, transparent), linear-gradient(-180deg, #ed875e, transparent), url("../img/case-1.jpg") no-repeat center;
+    background-blend-mode: screen;
+    background-size: cover; }
+  #case #case-2-img {
+    background: linear-gradient(black, transparent), linear-gradient(30deg, black, transparent), linear-gradient(-180deg, #ed875e, transparent), url("../img/case-2.jpg") no-repeat center;
+    background-blend-mode: screen;
+    background-size: cover; }
+  #case #case-3-img {
+    background: linear-gradient(black, transparent), linear-gradient(30deg, black, transparent), linear-gradient(-180deg, #ed875e, transparent), url("../img/case-3.png") no-repeat center;
+    background-blend-mode: screen;
+    background-size: cover; }
+  #case #case-4-img {
+    background: linear-gradient(black, transparent), linear-gradient(30deg, black, transparent), linear-gradient(-180deg, #ed875e, transparent), url("../img/case-4.jpg") no-repeat right;
+    background-blend-mode: screen;
+    background-size: cover; }
+  #case .case-project {
+    height: 50vh;
+    width: 25%;
+    border-radius: 0.3rem;
+    margin: 4rem 1rem;
+    transition: all 0.3s ease;
+    cursor: pointer; }
+    #case .case-project .case-project-content {
+      margin-left: 2rem;
+      transform: translateY(0);
+      display: none;
+      opacity: 0; }
+      #case .case-project .case-project-content .case-project-content-description {
+        width: 70%; }
+    #case .case-project:hover {
+      background: #ed875e; }
+      #case .case-project:hover .case-project-content {
+        display: block;
+        transform: translateY(-15rem);
+        opacity: 1; }
+      #case .case-project:hover #case-1-img, #case .case-project:hover #case-2-img, #case .case-project:hover #case-3-img, #case .case-project:hover #case-4-img {
+        opacity: 0.1; }
 
 #process {
   position: relative;
@@ -251,7 +261,7 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     padding: 6rem 0;
     margin: 5rem auto;
-    width: 30%;
+    width: 40%;
     color: white;
     background: #ed875e;
     border-radius: 1rem; }

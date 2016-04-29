@@ -84,6 +84,13 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
 }
 
+.flexbox-column-sb {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: center;
+}
+
 .flexbox-column-c {
   display: flex;
   flex-direction: column;
@@ -229,6 +236,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #pitch {
+  height: 100vh;
   #pitch-left-wrapper {
     width: 33.3333%;
     opacity: 0;
@@ -260,6 +268,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #case {
+  height: 100vh;
   #case-1-img, #case-2-img, #case-3-img, #case-4-img {
     transition: all 1s ease;
     height: 100%;
@@ -389,7 +398,7 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     padding: 6rem 0;
     margin: 5rem auto;
-    width: 30%;
+    width: 40%;
     color: white;
     background: $brand-color;
     border-radius: 1rem;
